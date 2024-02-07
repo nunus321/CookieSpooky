@@ -1,0 +1,14 @@
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/bin/Debug/net7.0/helloWorld
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/bin/Debug/net7.0/helloWorld.deps.json
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/bin/Debug/net7.0/helloWorld.runtimeconfig.json
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/bin/Debug/net7.0/helloWorld.dll
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/bin/Debug/net7.0/helloWorld.pdb
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/obj/Debug/net7.0/helloWorld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/obj/Debug/net7.0/helloWorld.AssemblyInfoInputs.cache
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/obj/Debug/net7.0/helloWorld.AssemblyInfo.cs
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/obj/Debug/net7.0/helloWorld.csproj.CoreCompileInputs.cache
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/obj/Debug/net7.0/helloWorld.dll
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/obj/Debug/net7.0/refint/helloWorld.dll
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/obj/Debug/net7.0/helloWorld.pdb
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/obj/Debug/net7.0/helloWorld.genruntimeconfig.cache
+/Users/jonasalmersal/Desktop/F#ogcanvas/Softwareudvikling/helloWorld/obj/Debug/net7.0/ref/helloWorld.dll
