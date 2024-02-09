@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace DIKUCanteen
 {
@@ -28,7 +29,7 @@ namespace DIKUCanteen
 
 public class Person {
     string Name;
-    string Occupation;
+    public string Occupation;
     int Age;
     public Person(string name, string occupation, int age)
     {
@@ -40,12 +41,12 @@ public class Person {
 
 public class Student : Person
 {
-    bool HasCup = false;
+    public bool HasCup = false;
     public Student(string name, string occupation, int age) : base(name,occupation,age)
     {
 
     }
-    public void TakeCup(Canteen canteen)
+    public virtual void TakeCup(Canteen canteen)
     {
         if (canteen.cups > 0 && HasCup != true) 
         {
@@ -54,7 +55,14 @@ public class Student : Person
         }
         else
         {
-            Console.WriteLine("ingen kopper oh noooo!");
+            if (canteen.cups < 1)
+            {
+                Console.WriteLine("ingen kopper oh noooo!");
+            }
+            else 
+            {
+                Console.WriteLine("Person har allerede en kop!");
+            }
         }
     }
 
@@ -78,11 +86,32 @@ public class Student : Person
 
 public class CanteenBoardMember :  Student
 {
-    static int CupBudget = 10;
+    static int CupBudget = 30;
     public CanteenBoardMember(string name, string occupation, int age) : base(name,occupation,age)
         {
 
         } 
+    public override void TakeCup(Canteen canteen)
+        {
+        if (canteen.cups > 0 && HasCup != true) 
+        {
+            canteen.cups -= 1;
+            HasCup = true;
+        }
+        else if (Occupation == "KantineBestyrelsesMedlem" && CupBudget >= 1)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                BuyCup(canteen);
+            }
+            TakeCup(canteen);
+            
+        }
+        else
+        {
+            Console.WriteLine("ingen kopper oh noooo!");
+        }
+        }
     public void BuyCup(Canteen canteen)
     {
         if (CupBudget >= 1)
